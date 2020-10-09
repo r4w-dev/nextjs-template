@@ -1,0 +1,46 @@
+{
+  "extends": [
+    "airbnb-typescript"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "max-len": [
+      "error",
+      {
+        "code": 120
+      }
+    ],
+    "func-names": [
+      "error",
+      "never"
+    ],
+    "react/jsx-props-no-spreading": [
+      "error",
+      {
+        "custom": "ignore"
+      }
+    ],
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "assert": "either"
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/*.tsx"
+      ],
+      "rules": {
+        "react/prop-types": "off"
+      }
+    }
+  ],
+  "plugins": [
+    "react",
+    "filenames"
+  ]
+}
