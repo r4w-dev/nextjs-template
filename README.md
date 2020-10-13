@@ -1,30 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
+NextJs + TypeScript + Jest + Enzyme
+
+### Yarn
+First, install dependencies:
 
 ```bash
-npm run dev
-# or
+yarn install
+```
+
+Next, run the development server:
+
+```bash
 yarn dev
+```
+
+### Docker
+```
+docker-compose -f ./docker/dev/docker-compose.yml up
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-## Learn More
+## Running Tests
 
-To learn more about Next.js, take a look at the following resources:
+### Yarn
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+yarn test
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Docker
 
-## Docker
-```bash
-docker build -t nextapp . 
-docker run --name nextapp-1 -p 0.0.0.0:3000:3000 nextapp
+```
+docker exec -u app -it nextjs-app yarn test
 ```
