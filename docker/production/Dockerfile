@@ -11,6 +11,7 @@ ADD ../../styles /app/styles
 ADD ../../next-env.d.ts /app/next-env.d.ts
 ADD ../../next.config.js /app/next.config.js
 ADD ../../package.json /app/package.json
+ADD ../../postcss.config.js /app/postcss.config.js
 ADD ../../tsconfig.json /app/tsconfig.json
 ADD ../../yarn.lock /app/yarn.lock
 RUN chown -R app:app /app
