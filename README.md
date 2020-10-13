@@ -17,7 +17,7 @@ yarn dev
 
 ### Docker
 ```
-docker-compose -f ./docker/dev/docker-compose.yml up
+cd docker/dev && docker-compose up
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
