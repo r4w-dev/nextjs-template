@@ -12,6 +12,7 @@ const purgecss = [
 
 module.exports = {
   plugins: [
+    'postcss-scss',
     'postcss-flexbugs-fixes',
     'postcss-import',
     'autoprefixer',
