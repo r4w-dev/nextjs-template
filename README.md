@@ -1,6 +1,6 @@
 ## Getting Started
 
-NextJs + TypeScript + Jest + Enzyme
+NextJs + TypeScript + Jest + Enzyme + SASS
 
 ### Yarn
 First, install dependencies:
